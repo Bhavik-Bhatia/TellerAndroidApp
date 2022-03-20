@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Imusic</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="email">Email</string>
+    <string name="have_a_account_sign_in">Sign In</string>
+    <string name="if_you_havr_a_account">Welcome to the community!</string>
+    <string name="textview">TextView</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="don_t_have_a_account_signup">Don\'t have an account? SignUp</string>
+    <string name="sign_up_2">Sign Up</string>
+    <string name="join_our_community_now">Join our community now!</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="have_an_account_sign_in">Have an account? Sign In</string>
+    <string name="full_name">Full Name</string>
+    <string name="dont_worry_we_will_help">We will send you an email</string>
+    <string name="forgot_password_title">Forgot Password</string>
+    <string name="registered_email">Registered Email</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="almost_there">Almost there!</string>
+    <string name="add_library">Add Library</string>
+    <string name="todo">TODO</string>
+    <string name="todo2">TODO</string>
+    <string name="library">Library</string>
+    <string name="search">Search</string>
+    <string name="my_account">My Account</string>
+    <string name="settings">Settings</string>
+    <string name="libname">LibraryName</string>
+    <string name="date">Date</string>
+    <string name="my_library">My Library</string>
+    <string name="my_audio">My Audio</string>
+    <string name="name">Name</string>
+    <string name="audioname">Audio Name</string>
+    <string name="click_to_select_an_image">Click to select an Image</string>
+    <string name="click_to_select_an_audio">Click to select an Audio</string>
+    <string name="start_time">00:00</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="follow">Follow</string>
+    <string name="user_posts">User Posts</string>
+</resources>

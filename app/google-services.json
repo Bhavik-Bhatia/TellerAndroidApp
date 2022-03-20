@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "394673108860",
+    "project_id": "teller-28342",
+    "storage_bucket": "teller-28342.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:394673108860:android:063966bd47b2fe395b96f9",
+        "android_client_info": {
+          "package_name": "com.example.Teller"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "394673108860-6k1q8opel1jngb8iig57jpufhusejjn5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrwPmrU3FhhpKhWwPy5cFt0QAAbbDNXn0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "394673108860-6k1q8opel1jngb8iig57jpufhusejjn5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

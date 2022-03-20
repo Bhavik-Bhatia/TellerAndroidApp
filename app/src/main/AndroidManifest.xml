@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.teller">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/teller_icon_foreground"
+        android:label="Teller"
+        android:roundIcon="@mipmap/teller_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Imusic">
+        <activity android:name=".UserPostsAudioListPage"/>
+        <activity android:name=".Update_AudioInput_Activity" />
+        <activity android:name=".SearchedUserProfile" />
+        <activity android:name=".AudioPlayPageActivity" />
+        <activity android:name=".Custom_AudioInput_Activity" />
+        <activity android:name=".HomePage" />
+        <activity android:name=".forgotpassword1" />
+        <activity android:name=".RegistrationPage" />
+        <activity android:name=".AudioListPage" />
+        <activity android:name=".MainActivity" android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+    </application>
+
+</manifest>

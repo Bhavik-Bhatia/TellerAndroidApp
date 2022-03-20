@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000022"
+    tools:context=".HomePage">
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginBottom="70dp"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/topbar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:layout_gravity="top"-->
+<!--            app:cardBackgroundColor="#0DDFCE"-->
+<!--            app:cardCornerRadius="4dp"-->
+<!--            app:cardElevation="8dp" >-->
+<!--            <TextView-->
+<!--                android:id="@+id/Signout"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_gravity="end"-->
+<!--                android:layout_marginEnd="10dp"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:fontFamily="sans-serif-medium"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:text="Sign out"-->
+<!--                android:textColor="#FFFFFF"-->
+<!--                android:textSize="18sp" />-->
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/OurLib"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="20dp"-->
+<!--            android:gravity="start"-->
+<!--            android:text="@string/my_library"-->
+<!--            android:textColor="#FFFFFF"-->
+<!--            android:textSize="22sp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/rv"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="10dp" />-->
+<!--    </LinearLayout>-->
+
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        style="@style/Widget.Design.ScrimInsetsFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="65dp">
+
+    </FrameLayout>
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:backgroundTint="#0DDFCE"
+        app:elevation="12dp"
+        app:fabCradleRoundedCornerRadius="20dp"
+        app:fabCradleVerticalOffset="10dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            app:elevation="30dp"
+            app:itemIconSize="20dp"
+            app:itemIconTint="@color/black"
+            app:itemTextColor="@color/white"
+            app:menu="@menu/menu" />
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0DDFCE"
+        android:clickable="true"
+        android:contentDescription="@string/todo"
+        android:focusable="true"
+        android:src="@drawable/add"
+        android:visibility="invisible"
+        app:elevation="12dp"
+        app:layout_anchor="@id/bottomAppBar" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

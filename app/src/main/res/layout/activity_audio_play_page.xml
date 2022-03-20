@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000022"
+    tools:context=".AudioPlayPageActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/topbar"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="top"
+                android:layout_margin="10dp"
+                android:foregroundGravity="top"
+                app:cardBackgroundColor="#000022"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/BackToAudioList"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/todo"
+                    app:srcCompat="@drawable/abc_vector_test" />
+
+                <TextView
+                    android:id="@+id/Audiogetname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center_vertical"
+                    android:text="@string/textview"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/AudioPlayimage"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="80dp"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerCrop"
+                android:src="@drawable/microphone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/topbar"
+                app:shapeAppearance="@style/ShapeAppearance.App.CircularImage" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/AudioPlayimage">
+
+                <ImageView
+                    android:id="@+id/backward"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ic_baseline_arrow_left_24" />
+
+                <Button
+                    android:id="@+id/play_button"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/custom_buttons"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:fontFamily="sans-serif-thin"
+                    android:minWidth="20dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    app:backgroundTint="@color/Green"
+                    app:backgroundTintMode="add"
+                    app:elevation="5dp"
+                    app:icon="@android:drawable/ic_media_play"
+                    app:iconGravity="textStart"
+                    app:iconPadding="0dp"
+                    app:iconSize="24sp" />
+                <Button
+                    android:id="@+id/pause_button"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/custom_buttons"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:fontFamily="sans-serif-thin"
+                    android:minWidth="20dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    app:backgroundTint="@color/Green"
+                    app:backgroundTintMode="add"
+                    app:elevation="5dp"
+                    app:icon="@android:drawable/ic_media_pause"
+                    app:iconGravity="textStart"
+                    app:iconPadding="0dp"
+                    app:iconSize="24sp"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/forward"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ic_baseline_arrow_right_24" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+                <TextView
+                    android:id="@+id/starttime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/start_time"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    tools:ignore="SmallSp" />
+
+                <SeekBar
+                    android:id="@+id/seekBar"
+                    style="@android:style/Widget.DeviceDefault.SeekBar"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:clickable="false"
+                    app:tickMarkTint="@color/Green"
+                    app:tickMarkTintMode="add" />
+
+                <TextView
+                    android:id="@+id/totaltime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
